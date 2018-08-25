@@ -1,0 +1,55 @@
+.well {
+  text-align: center;
+  background-color: #710000;
+}
+.majina {
+  color: white;
+  font-family: Helvetica;
+}
+div.jumbotron {
+  background-color: #710000;
+  color: white;
+  margin: 30px;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+body {
+  background-image: url(..//images/dice.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.quote {
+  text-align: center;
+  font-style: italic;
+}
+h1 {
+    text-shadow: 3px 2px red;
+    text-align: center;
+    color: white;
+}
+#lefty {
+  width: 35%;
+  float: left;
+  background-color: #710000;
+  color: white;
+  display: block;
+  font-size: 30px;
+  font-family: Helvetica;
+  opacity: 0.6;
+  margin: 30px;
+  border: 1px solid white;
+}
+
+#righty{
+  width: 35%;
+  float: right;
+  background-color: #710000;
+  color: white;
+  display: block;
+  font-size: 30px;
+  font-family: Helvetica;
+  opacity: 0.6;
+  margin: 30px;
+  border: 1px solid white;
+}
