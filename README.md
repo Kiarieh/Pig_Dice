@@ -19,28 +19,24 @@ If Player 2 rolls a 1, no score is added and the round for Player 2 ends.
 If any player presses the roll buttton, their turn total is tallied and their round ends.
 The first player to arrive at 50 or more points marks the end of the game and is declared as the winner of the game.
 
-Setup/Installation Requirements
+# Setup/Installation Requirements
 
 Clone this repository
-Open the HTML file
-Open the HTML FILE WITH web browser of choice
-link to live page
+Open link to the live site located on the description portion of the repo.
 
-https://abdirahman-mahat.github.io/pig-dice/
+https://Kiarieh.github.io/Pig_Dice/
 
-Technologies Used
+# Technologies Used
 
 HTML
 CSS
-Bootstrap
 JavaScript
-jQuery
-support and contact details
+# Contact Details
 
-Contact the author at: abdirahmanmahat3@gmail.com
+Contact the author at: kiariehjames@gmail.com
 
-License
+# License
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2018 pixels tech company
+Copyright (c) 2018 Antony James Kiarieh
