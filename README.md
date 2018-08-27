@@ -1,8 +1,8 @@
 # Pig_Dice
 
-Author
+# Author
 
-abdirahman mahat
+Antony James Kiarieh
 
 Description
 
