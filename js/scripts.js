@@ -3,95 +3,60 @@
    location.reload()
  }
 
-  var arrays = [];
-var originScore = function(numbers){
-  var tempscore = 0;
-
-
-        if (numbers === 1) {
-          totalScore = arrays.length = 0;
-      return "Sorry You rolled a 1. Score is zero"
-
-    }
-
-    else {
-      arrays.push(numbers);
-
-      totalScore =  arrays.reduce((a,b)=>a+b);
-
-      // tempscore += numbers;
-      // ++tempscore;
-        if (totalScore >= 100) {
-          return "WINNER!!"
-        }
-          return totalScore;
-    }
-}
-
-function Dice(){
-  var tempScore = 0;
-   var gameScore = 0;
-}
 
 var randomize = function(){
   var randomNumber = Math.floor((Math.random() * 6) + 1);
    return randomNumber;
 }
 
-var randNumber = randomize();
-
-var playerScore = function(player){
-  var roll = randNumber;
-  var tempScore = 0;
-  var arrays = [];
-
-  if (roll === 1) {
-    return 0;
-  }
-  else {
-    arrays.push(roll);
-    for (var i = 0; i < arrays.length; i++) {
-      var total = tempScore + roll;
-      return total;
-    }
-
-
-  }
-}
 
 // USER LOGIC
-
-  $("#player1-hold").click(function(){
-    $("#player1-hold").toggle();
-  });
-  $("#player2-hold").click(function(){
-    $("#player2-hold").toggle();
-  });
-
+$(document).ready(function(){
   // Player 1
-
+var dice1= 0;
+var summation1 = 0;
+var totalscore1 = 0;
   $("#player1-roll").click(function(){
-    var player1 = randomize();
-    $(".results1").text(player1);
-    var score1 = originScore(player1);
-    $(".rollscore1").text(score1);
+    dice1 = randomize();
+
+    summation1 += dice1;
+
+
+    $(".rollscore1").text(dice1);
+    $(".summation1").text(summation1);
   });
+
+    $("#player1-hold").click(function(){
+      // $("#player1-hold").toggle();
+      totalscore1+= summation1;
+      $(".results1").text(totalscore1);
+
+
+    });
+
 
   // Player 2
-
+  var dice2= 0;
+  var summation2 = 0;
+  var totalscore2 =0;
   $("#player2-roll").click(function(){
-    var player2 = randomize();
-      $(".results2").text(player2);
-      var score2 = originScore(player2);
-      $(".rollscore2").text(score2);
+    dice2= randomize();
+    summation2 += dice2;
 
+    $(".rollscore2").text(dice2);
+    $(".summation2").text(summation2);
   })
+
+    $("#player2-hold").click(function(){
+      totalscore2 += summation2;
+      $(".results2").text(totalscore2);
+
+
+    });
+
 
    $("#new-game").click(function(){
      page();
 
    });
-
-
-
 });
